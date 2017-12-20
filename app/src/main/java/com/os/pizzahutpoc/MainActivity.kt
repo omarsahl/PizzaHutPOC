@@ -17,11 +17,11 @@ import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : AppCompatActivity(), AppBarLayout.OnOffsetChangedListener {
     companion object {
         private const val ALPHA_ANIMATIONS_DURATION = 250L
-        private const val PERCENTAGE_TO_HIDE_FOLLOW_BUTTON = 0.2f
+        private const val PERCENTAGE_TO_HIDE_FOLLOW_BUTTON = 0.15f
         private const val PERCENTAGE_TO_HIDE_WAS_THERE_LABEL = 0.5f
         private const val PERCENTAGE_TO_HIDE_FOLLOWERS_COUNT = 0.7f
-        private const val PERCENTAGE_TO_HIDE_AVATAR = 0.8f
-        private const val PERCENTAGE_TO_SHOW_TOOLBAR_TITLE = PERCENTAGE_TO_HIDE_AVATAR + 0.1f
+        private const val PERCENTAGE_TO_HIDE_AVATAR = 0.7f
+        private const val PERCENTAGE_TO_SHOW_TOOLBAR_TITLE = PERCENTAGE_TO_HIDE_AVATAR + 0.05f
     }
 
     private var isAvatarVisible = true
@@ -29,8 +29,6 @@ class MainActivity : AppCompatActivity(), AppBarLayout.OnOffsetChangedListener {
     private var isFollowerCountVisible = true
     private var isWasThereLabelVisible = true
     private var isToolbarLogoVisible = false
-
-    private var initialToolbarTitleX = 0.0f
     /*
       * NOTE:
       * since 'kotlin-android-extensions' plugin is enabled, we can access all the views
@@ -72,12 +70,6 @@ class MainActivity : AppCompatActivity(), AppBarLayout.OnOffsetChangedListener {
         updateFollowersCountAlpha(percentage)
         updateWasThereLabel(percentage)
         updateToolbarLogoAlpha(percentage)
-
-        updateToolbarTitlePosition(percentage)
-    }
-
-    private fun updateToolbarTitlePosition(percentage: Float) {
-
     }
 
     private fun updateFollowButtonAlpha(percentage: Float) {

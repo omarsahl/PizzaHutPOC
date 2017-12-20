@@ -52,11 +52,12 @@
             <LinearLayout
                 android:id="@+id/headerContainer"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="?attr/actionBarSize"
                 android:gravity="top|center"
                 android:orientation="vertical"
-                app:layout_collapseMode="parallax">
+                app:layout_collapseMode="parallax"
+                app:layout_collapseParallaxMultiplier="0.435">
 
                 <ImageView
                     android:id="@+id/avatar"
@@ -75,6 +76,17 @@
                     android:textColor="@color/white"
                     android:textSize="28sp"
                     app:fontFamily="@font/lato_regular" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="55dp"
+                android:layout_marginTop="?attr/actionBarSize"
+                android:gravity="bottom|center"
+                android:orientation="vertical"
+                android:paddingTop="8dp"
+                app:layout_collapseMode="parallax">
 
                 <TextView
                     android:id="@+id/followersCountLabel"
