@@ -16,8 +16,9 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), AppBarLayout.OnOffsetChangedListener {
     companion object {
+        // Views alpha animation threshold
         private const val ALPHA_ANIMATIONS_DURATION = 250L
-        private const val PERCENTAGE_TO_HIDE_FOLLOW_BUTTON = 0.15f
+        private const val PERCENTAGE_TO_HIDE_FOLLOW_BUTTON = 0.6f
         private const val PERCENTAGE_TO_HIDE_WAS_THERE_LABEL = 0.5f
         private const val PERCENTAGE_TO_HIDE_FOLLOWERS_COUNT = 0.7f
         private const val PERCENTAGE_TO_HIDE_AVATAR = 0.7f
@@ -61,6 +62,9 @@ class MainActivity : AppCompatActivity(), AppBarLayout.OnOffsetChangedListener {
         viewPager.adapter = adapter
     }
 
+    /**
+     * Called when the {@link AppBarLayout}'s layout offset has been changed.
+     */
     override fun onOffsetChanged(appBarLayout: AppBarLayout, offset: Int) {
         val scrollRange = appBarLayout.totalScrollRange
         val percentage = Math.abs(offset).toFloat() / scrollRange.toFloat()
