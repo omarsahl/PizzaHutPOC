@@ -1,4 +1,4 @@
-#### This sample was built using Android Studio 3.0.1 with the following setttings:
+### This sample was built using Android Studio 3.0.1 with the following setttings:
 ##### 1. Gradle version 4.1
 ##### 2. Gradle plugin version 3.0.1
 ##### 3. Kotlin gradle plugin version 1.2.10
