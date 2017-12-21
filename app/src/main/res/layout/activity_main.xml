@@ -67,7 +67,7 @@
                     android:layout_marginTop="8dp"
                     android:src="@drawable/pizza_hut_logo" />
 
-                <TextView
+                <android.support.v7.widget.AppCompatTextView
                     android:id="@+id/toolbarTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -88,7 +88,7 @@
                 android:paddingTop="8dp"
                 app:layout_collapseMode="parallax">
 
-                <TextView
+                <android.support.v7.widget.AppCompatTextView
                     android:id="@+id/followersCountLabel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -98,7 +98,7 @@
                     android:textSize="20sp"
                     app:fontFamily="@font/raleway_regular" />
 
-                <TextView
+                <android.support.v7.widget.AppCompatTextView
                     android:id="@+id/wasThereLabel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -108,7 +108,7 @@
                     android:textColor="@color/grayish_white"
                     app:fontFamily="@font/raleway_regular" />
 
-                <Button
+                <android.support.v7.widget.AppCompatButton
                     android:id="@+id/followButton"
                     android:layout_width="210dp"
                     android:layout_height="wrap_content"

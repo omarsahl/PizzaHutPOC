@@ -18,9 +18,9 @@ class MainActivity : AppCompatActivity(), AppBarLayout.OnOffsetChangedListener {
     companion object {
         // Views alpha animation threshold
         private const val ALPHA_ANIMATIONS_DURATION = 250L
-        private const val PERCENTAGE_TO_HIDE_FOLLOW_BUTTON = 0.6f
-        private const val PERCENTAGE_TO_HIDE_WAS_THERE_LABEL = 0.5f
-        private const val PERCENTAGE_TO_HIDE_FOLLOWERS_COUNT = 0.7f
+        private const val PERCENTAGE_TO_HIDE_FOLLOW_BUTTON = 0.2f
+        private const val PERCENTAGE_TO_HIDE_WAS_THERE_LABEL = 0.6f
+        private const val PERCENTAGE_TO_HIDE_FOLLOWERS_COUNT = 0.8f
         private const val PERCENTAGE_TO_HIDE_AVATAR = 0.7f
         private const val PERCENTAGE_TO_SHOW_TOOLBAR_TITLE = PERCENTAGE_TO_HIDE_AVATAR + 0.05f
     }
