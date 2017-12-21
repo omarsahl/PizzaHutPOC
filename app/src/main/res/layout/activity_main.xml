@@ -98,15 +98,36 @@
                     android:textSize="20sp"
                     app:fontFamily="@font/raleway_regular" />
 
-                <android.support.v7.widget.AppCompatTextView
-                    android:id="@+id/wasThereLabel"
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="18dp"
-                    android:text="Ahmed, Hussein, and 15 others was there"
-                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-                    android:textColor="@color/grayish_white"
-                    app:fontFamily="@font/raleway_regular" />
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:background="?attr/selectableItemBackground"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/wasThereLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="18dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="18dp"
+                        android:gravity="center"
+                        android:text="Ahmed, Hussein, and 15 others was there"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/grayish_white"
+                        app:fontFamily="@font/raleway_regular" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|center"
+                        app:srcCompat="@drawable/right_arrow_icon" />
+                </LinearLayout>
 
                 <android.support.v7.widget.AppCompatButton
                     android:id="@+id/followButton"
