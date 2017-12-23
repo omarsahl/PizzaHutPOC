@@ -61,9 +61,10 @@
 
                 <ImageView
                     android:id="@+id/avatar"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:layout_marginBottom="10dp"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
                     android:layout_marginTop="8dp"
                     android:src="@drawable/pizza_hut_logo" />
 
@@ -71,11 +72,13 @@
                     android:id="@+id/toolbarTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:layout_marginBottom="16dp"
+                    android:gravity="center"
                     android:text="@string/pizza_hut"
                     android:textColor="@color/white"
-                    android:textSize="28sp"
-                    app:fontFamily="@font/lato_regular" />
+                    android:textSize="26sp"
+                    app:fontFamily="@font/raleway_regular" />
             </LinearLayout>
 
             <LinearLayout
@@ -99,24 +102,27 @@
                     app:fontFamily="@font/raleway_regular" />
 
                 <LinearLayout
+                    android:id="@+id/wasThereContainer"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
                     android:clickable="true"
                     android:focusable="true"
                     android:gravity="center"
-                    android:background="?attr/selectableItemBackground"
                     android:orientation="horizontal">
 
                     <android.support.v7.widget.AppCompatTextView
                         android:id="@+id/wasThereLabel"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginBottom="18dp"
                         android:layout_marginLeft="8dp"
                         android:layout_marginRight="8dp"
                         android:layout_marginTop="18dp"
+                        android:layout_weight="1"
                         android:gravity="center"
+                        android:singleLine="true"
                         android:text="Ahmed, Hussein, and 15 others was there"
                         android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
                         android:textColor="@color/grayish_white"
@@ -126,12 +132,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="end|center"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
                         app:srcCompat="@drawable/right_arrow_icon" />
                 </LinearLayout>
 
                 <android.support.v7.widget.AppCompatButton
                     android:id="@+id/followButton"
-                    android:layout_width="210dp"
+                    android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="12dp"
                     android:background="@drawable/button_bg_round"
@@ -155,8 +163,8 @@
 
                 <ImageView
                     android:id="@+id/toolbarLogo"
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
                     android:scaleType="centerInside"
                     android:src="@drawable/pizza_hut_logo" />
             </android.support.v7.widget.Toolbar>

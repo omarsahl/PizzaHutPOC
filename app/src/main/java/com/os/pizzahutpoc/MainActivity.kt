@@ -126,14 +126,14 @@ class MainActivity : AppCompatActivity(), AppBarLayout.OnOffsetChangedListener {
     private fun updateWasThereLabel(percentage: Float) {
         if (percentage >= PERCENTAGE_TO_HIDE_WAS_THERE_LABEL) {
             if (isWasThereLabelVisible) {
-                startAlphaAnimation(wasThereLabel, ALPHA_ANIMATIONS_DURATION, View.INVISIBLE)
+                startAlphaAnimation(wasThereContainer, ALPHA_ANIMATIONS_DURATION, View.INVISIBLE)
                 isWasThereLabelVisible = false
             }
 
         } else {
 
             if (!isWasThereLabelVisible) {
-                startAlphaAnimation(wasThereLabel, ALPHA_ANIMATIONS_DURATION, View.VISIBLE)
+                startAlphaAnimation(wasThereContainer, ALPHA_ANIMATIONS_DURATION, View.VISIBLE)
                 isWasThereLabelVisible = true
             }
         }
